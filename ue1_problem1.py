@@ -16,8 +16,6 @@ a11, a12, a13 = 1, 1, 3
 a21 , a22, a23 = 5, 1, 1
 C1, C2, C3 = 30, 10, 24
 
-
-
 # Model
 
 model = gp.Model("LP_model")
