@@ -3,6 +3,8 @@ from gurobipy import GRB
 
 # Problem 2
 
+# not a generic model
+
 # Problem Data
 
 products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -28,5 +30,5 @@ model.addConstr(gp.quicksum(x[j] * time[j] for j in J) <= time_C, name="time_Cap
 for j in J:
     model.addConstr(x[j] <= demand[j], name=f"demand{j}")
 
-model.optimize()
+model.optimize() # 700
 

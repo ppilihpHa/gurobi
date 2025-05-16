@@ -3,6 +3,8 @@ from gurobipy import GRB
 
 # Problem 1
 
+# not a generic model
+
 # DV: Amount Product 1 -> x1 | Amount Product 2 -> x2
 # c1 -> 10€ | c2 -> 40€
 # 3 machines -> ai1, ai2:

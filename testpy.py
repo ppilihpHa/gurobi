@@ -8,3 +8,5 @@ l2, l3 = [1,2,3], [2,2,2]
 
 print(list(range(1,11)))
 
+x = (float) (1 / 10)
+print(x, type(x))
