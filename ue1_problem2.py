@@ -28,7 +28,7 @@ model.addConstr(gp.quicksum(x[j] * material[j] for j in J) <= material_C, name="
 model.addConstr(gp.quicksum(x[j] * time[j] for j in J) <= time_C, name="time_Cap")
 
 for j in J:
-    model.addConstr(x[j] <= demand[j], name=f"demand{j}")
+    model.addConstr(x[j] <= demand[j], name=f"demand{j}") # würde auch mit up (upper bound) beim deklarieren gehen
 
 model.optimize() # 700
 
