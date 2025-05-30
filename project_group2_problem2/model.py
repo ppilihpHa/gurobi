@@ -48,6 +48,7 @@ if model.Status == GRB.OPTIMAL:
     print(f"Optimal Number of Stations: {model.ObjVal}")
     print(f"Station in Districts: {hp.getStations(model=model, J=J)}\n")
     print(f"Runtime: {model.Runtime}\n")
+    print(hp.writeOutput(model=model, J=J, distances=distances))
 
 # testing
 
