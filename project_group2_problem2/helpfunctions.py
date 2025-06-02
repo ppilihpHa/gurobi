@@ -10,8 +10,6 @@ def preperate_facility_possible_Matrix(distances, max_distance):
         for j in N:
             if distances[i][j] <= max_distance:
                 result[i][j] = 1
-#            elif i == j:
-#                distances[i][j] = -1
             else:
                 result[i][j] = 0
     return result
